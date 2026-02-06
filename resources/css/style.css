@@ -1,0 +1,41 @@
+/* CSS HEX */
+/* --white: #FAFCFBff;
+--light-cyan: #C8EFF7ff; 
+--lavender-blush: #F7E9EDff; light pink
+--pastel-petal: #F2C0D2ff; darker pink
+--azure-mist: #DEF0EFff; */ 
+
+/* global css */
+*{
+    background-color: #F7E9EDff;
+}
+/* home page css */
+#mainpage{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+#centerpiece{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#homebuttons{
+    display: flex;
+    gap: 2rem;
+}
+
+.mainbutton{
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0%;
+    border-color: rgba(0,0,0,0);
+}
+.mainbutton:hover{
+    scale: 105%;
+}
+.mainbutton:active{
+    scale: 90%;
+}
+
