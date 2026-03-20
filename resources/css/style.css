@@ -5,15 +5,20 @@
 --pastel-petal: #F2C0D2ff; darker pink
 --azure-mist: #DEF0EFff; */ 
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* main text font */
+
 /* global css */
 *{
     background-color: #F7E9EDff;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
 }
 /* home page css */
 #mainpage{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 40vh;
 }
 #centerpiece{
     display: flex;
@@ -31,11 +36,35 @@
     flex-direction: column-reverse;
     border-radius: 0%;
     border-color: rgba(0,0,0,0);
+    font-size: 1em;
 }
+
 .mainbutton:hover{
     scale: 105%;
 }
+
 .mainbutton:active{
-    scale: 90%;
+    scale: 95%;
 }
 
+/* about me css */
+#headshot{
+    border-radius: 150px;
+}
+
+#headerdiv{
+    display: flex;;
+    flex-direction: row;
+    gap: 50vh;
+}
+/* projects css */
+#centerdiv{
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40vh; */
+    /* height: 20vh; */
+    gap: 1rem;
+}
