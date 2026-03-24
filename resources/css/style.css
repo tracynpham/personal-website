@@ -43,6 +43,10 @@
     scale: 105%;
 }
 
+.mainbutton[disabled]:hover{
+    scale: 100%;
+}
+
 .mainbutton:active{
     scale: 95%;
 }
@@ -55,7 +59,7 @@
 #headerdiv{
     display: flex;;
     flex-direction: row;
-    gap: 50vh;
+    /* gap: 40vh; */
 }
 /* projects css */
 #centerdiv{
@@ -67,4 +71,21 @@
     /* margin-top: 40vh; */
     /* height: 20vh; */
     gap: 1rem;
+}
+
+.projectlink{
+    font-size: large;
+    border-radius: 0%;
+    border-color: rgba(0,0,0,0);
+}
+
+.projectlink:hover{
+    scale: 105%;
+}
+
+.projectlink[disabled]:hover{
+    scale: 100%;
+}
+.projectlink:active{
+    scale: 95%;
 }
