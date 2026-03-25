@@ -39,15 +39,15 @@
     font-size: 1em;
 }
 
-.mainbutton:hover{
+.mainbutton:hover, .projectlink:hover{
     scale: 105%;
 }
 
-.mainbutton[disabled]:hover{
+.mainbutton[disabled]:hover, .projectlink[disabled]:hover{
     scale: 100%;
 }
 
-.mainbutton:active{
+.mainbutton:active, .projectlink:active{
     scale: 95%;
 }
 
@@ -79,13 +79,3 @@
     border-color: rgba(0,0,0,0);
 }
 
-.projectlink:hover{
-    scale: 105%;
-}
-
-.projectlink[disabled]:hover{
-    scale: 100%;
-}
-.projectlink:active{
-    scale: 95%;
-}
