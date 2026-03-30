@@ -94,3 +94,11 @@
     gap: 10px;
 }
 
+@media (max-width: 600px) {
+    .mobileimg {
+        height: 500px !important;
+        /* width: 20% !important; */
+    }
+}
+
+
