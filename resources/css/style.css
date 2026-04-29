@@ -47,6 +47,7 @@
 
 .mainbutton[disabled]:hover, .projectlink[disabled]:hover{
     scale: 100%;
+    color: #B1A8AA;
 }
 
 .mainbutton:active, .projectlink:active{
