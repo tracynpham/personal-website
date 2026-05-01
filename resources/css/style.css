@@ -108,6 +108,22 @@
     gap: 10px;
 }
 
+/* contact me css */
+#copied {
+    background-color: #F2C0D2ff;
+    border: 1px solid #F2C0D2ff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#copied.show {
+    opacity: 1;
+}
+
+/* mobile css rules */
 @media (max-width: 600px) {
     .headerimg{
         width: 300px;
@@ -127,18 +143,9 @@
     }
 }
 
-/* contact me css */
-#copied {
-    background-color: #F2C0D2ff;
-    border: 1px solid #F2C0D2ff;
-    padding: 0.5rem 1.25rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    opacity: 0;
-    transition: opacity 0.2s ease;
+@media (max-width: 400px) {
+    .mainbutton .projectlink{
+        font-size: 1em; 
+        padding: 0.5rem 1rem;
+    }
 }
-
-#copied.show {
-    opacity: 1;
-}
-

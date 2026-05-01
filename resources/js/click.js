@@ -1,6 +1,6 @@
 function copyLink(){
     const link = document.getElementById("copyme");
-    navigator.clipboard.writeText(link.innterText);
+    navigator.clipboard.writeText(link.innerText);
     
     const copied = document.getElementById("copied")
     copied.classList.add("show");
