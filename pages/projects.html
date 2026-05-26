@@ -6,13 +6,32 @@
     <!-- referenced this for mobile friendly design -->
     <title>projects</title>
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../resources/images/balaozinho22.ico">
     
 </head>
 <body>
+    <a href="../index.html"> &lt;- back </a>
     <header>
-        <a href="../index.html"> &lt;- back </a>
+        <!-- NOTE TO FUTURE SELF: ADD NAVBAR TO OTHER PAGES, NEED TO MAKE SURE LINKS ARE CORRECT 5/18/26 -->
+        <nav class="navbar">
+            <div class="navbarlinks">
+                <button onclick="window.location.href='../index.html'" class="mainbutton">
+                        home 
+                    </button>
+                <button onclick="window.location.href='aboutme.html'" class="mainbutton">
+                        about me
+                </button>
+                <button onclick="window.location.href='projects.html'" class="mainbutton">
+                    projects
+                </button>
+                <button onclick="window.location.href='contactme.html'" class="mainbutton">
+                    contact me
+                </button>
+            </div>
+        </nav>
     </header>
-    <div class="centerdiv" style="margin-top: 40vh;">
+    <div class="centerdiv" id="projectlinks">
+
         <button class="projectlink" href="" disabled title="work in progress"> wip: birthday gift planner</button>
         <button class="projectlink" onclick="window.location.href='projects/blog.html'">10:36 platform blog</button>
         <button class="projectlink" onclick="window.location.href='projects/gopherfate.html'">gopher F.A.T.E</button>
@@ -20,4 +39,17 @@
         <button class="projectlink" onclick="window.location.href='projects/voting.html'">voting system development</button>
     </div>
 </body>
+<footer>
+    <div class="buttonbar">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a7.gif">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i2.gif">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/b46.gif"> 
+        <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/3ds.gif"> 
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/c15.png"> 
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a57.png">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i12.png">
+        <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/mimikyu.gif"> 
+        <img class="stamp" height="57px" src="../resources/images/tomodachistamp.png">
+    </div>
+</footer>
 </html>

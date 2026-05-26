@@ -6,27 +6,62 @@
     <!-- referenced this for mobile friendly design -->
     <title>contact me!</title>
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../resources/images/balaozinho22.ico">
     
 </head>
 <body>
+    <a href="../index.html" style="margin: 10px; padding: 10px;"> &lt;- back </a>
     <header>
-        <a href="../index.html" style="margin: 10px; padding: 10px;"> &lt;- back </a>
+        <nav class="navbar">
+            <div class="navbarlinks">
+                <button onclick="window.location.href='../index.html'" class="mainbutton">
+                        home 
+                    </button>
+                <button onclick="window.location.href='aboutme.html'" class="mainbutton">
+                        about me
+                </button>
+                <button onclick="window.location.href='projects.html'" class="mainbutton">
+                    projects
+                </button>
+                <button onclick="window.location.href='contactme.html'" class="mainbutton">
+                    contact me
+                </button>
+            </div>
+        </nav>
     </header>
-    <img class="headerimg" src="../resources/images/projectimages/contactme.gif"
-     style="display: block; margin: 0 auto;">
-    <div class="centerdiv" style="margin-top: 20vh;">
-        <a href="https://www.linkedin.com/in/tracy-pham-219053333/" target="_blank" rel="noopener">
+    <div class="centerdiv">
+        <img id="mobileheaderimg" class="headerimg" src="../resources/images/projectimages/contactme.gif">
+        <div class="centerdiv" id="contactlinks">
+            <a href="https://www.linkedin.com/in/tracy-pham-219053333/" target="_blank" rel="noopener">
             <button class="projectlink">linkedin</button>
-        </a>
-        <a href="https://github.com/tracynpham" target="_blank" rel="noopener">
-            <button class="projectlink">github</button>
-        </a>
-        <p>email me at: <a id="copyme" href="" onclick="copyLink(); return false;">tracynguypham@gmail.com</a></p>
-        <!-- with help from https://www.w3schools.com/howto/howto_js_copy_clipboard.asp -->
-        <div id="copied">
-            email copied!
+            </a>
+            <a href="https://github.com/tracynpham" target="_blank" rel="noopener">
+                <button class="projectlink">github</button>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1UQL52Dn1Wzsd9rgC6DSIvckUwest48Ug/view" target="_blank" rel="noopener">
+            <button class="projectlink">resume</button>
+            </a>
+            <p>email me at: <a id="copyme" href="" onclick="copyLink(); return false;">tracynguypham@gmail.com</a></p>
+            <!-- with help from https://www.w3schools.com/howto/howto_js_copy_clipboard.asp -->
+            <div id="copied">
+                email copied!
+            </div>
         </div>
     </div>
+    <footer>
+        <div class="buttonbar">
+            <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a7.gif">
+            <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i2.gif">
+            <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/b46.gif"> 
+            <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/3ds.gif"> 
+            <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/c15.png"> 
+            <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a57.png">
+            <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i12.png">
+            <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/mimikyu.gif"> 
+            <img class="stamp" height="57px" src="../resources/images/tomodachistamp.png">
+    </div>
+    </footer>
 </body>
 <script defer src="../resources/js/click.js"></script>
 </html>

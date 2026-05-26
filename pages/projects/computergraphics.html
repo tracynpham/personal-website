@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://www.w3schools.com/Css/css_rwd_viewport.asp -->
+    <!-- referenced this for mobile friendly design -->
     <title>tracy's website</title>
     <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../resources/images/balaozinho22.ico">
     
 </head>
 <body>
+    <a class="backbutton" href="../projects.html"> &lt;- back </a>
     <header>
-        <a href="../projects.html"> &lt;- back </a>
+        <nav class="navbar">
+            <div class="navbarlinks">
+                <button onclick="window.location.href='../../index.html'" class="mainbutton">
+                        home 
+                    </button>
+                <button onclick="window.location.href='../aboutme.html'" class="mainbutton">
+                        about me
+                </button>
+                <button onclick="window.location.href='../projects.html'" class="mainbutton">
+                    projects
+                </button>
+                <button onclick="window.location.href='../contactme.html'" class="mainbutton">
+                    contact me
+                </button>
+            </div>
+        </nav>
     </header>
-    <img class="headerimg" src="../../resources/images/projectimages/computergraphics.gif"
-     style="display: block; margin: 0 auto;">
-    <div class="centerdiv" style="margin-top: 20vh;">
-        <!-- <img src="../../resources/images/projectimages/computergraphics.gif"> -->
-        <!-- <button class="projectlink" href="https://tracynpham.github.io/csci5607-project2-webpage/">project 2: image manipulation</button> -->
-        <a href="https://tracynpham.github.io/csci5607-project2-webpage/">
-            <button class="projectlink">project 2: image manipulation</button>
-        </a>
-        <a href="https://tracynpham.github.io/csci5607-project3b-webpage/">
-            <button class="projectlink">project 3b: ray tracing ii</button>
-        </a>
-        <a href="https://tracynpham.github.io/csci5607-project4-webpage/">
-            <button class="projectlink">project 4: real-time 3D game programming</button>
-        </a>
-        <a href="https://tracynpham.github.io/csci5607-finalproject-webpage/">
-            <button class="projectlink">final project: jumping tarcy</button>
-        </a>
+    
+    <div class="centerdiv">
+        <img id="mobileheaderimg" class="headerimg" src="../../resources/images/projectimages/computergraphics.gif">
+        <div class="centerdiv" id="computerprojectlinks">
+            <a href="https://tracynpham.github.io/csci5607-project2-webpage/">
+                <button class="projectlink">project 2: image manipulation</button>
+            </a>
+            <a href="https://tracynpham.github.io/csci5607-project3b-webpage/">
+                <button class="projectlink">project 3b: ray tracing ii</button>
+            </a>
+            <a href="https://tracynpham.github.io/csci5607-project4-webpage/">
+                <button class="projectlink">project 4: real-time 3D game programming</button>
+            </a>
+            <a href="https://tracynpham.github.io/csci5607-finalproject-webpage/">
+                <button class="projectlink">final project: jumping tarcy</button>
+            </a>
+        </div>
+        
     </div>
 </body>
+<footer>
+    <div class="buttonbar">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a7.gif">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i2.gif">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/b46.gif"> 
+        <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/3ds.gif"> 
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/c15.png"> 
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a57.png">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i12.png">
+        <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/mimikyu.gif"> 
+        <img class="stamp" height="57px" src="../../resources/images/tomodachistamp.png">
+    </div>
+</footer>
 </html>

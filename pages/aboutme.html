@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://www.w3schools.com/Css/css_rwd_viewport.asp -->
+    <!-- referenced this for mobile friendly design -->
     <title>about me</title>
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../resources/images/balaozinho22.ico">
     
 </head>
 <body>
+    <a class="backbutton" href="../index.html"> &lt;- back </a>
     <header>
-        <a href="index.html"> &lt;- back </a>
+        <!-- <a style="left: 5vh;" href="../index.html"> &lt;- back </a> -->
+        <nav class="navbar">
+            <div class="navbarlinks">
+                <button onclick="window.location.href='../index.html'" class="mainbutton">
+                        home 
+                    </button>
+                <button onclick="window.location.href='aboutme.html'" class="mainbutton">
+                        about me
+                </button>
+                <button onclick="window.location.href='projects.html'" class="mainbutton">
+                    projects
+                </button>
+                <button onclick="window.location.href='contactme.html'" class="mainbutton">
+                    contact me
+                </button>
+            </div>
+        </nav>
     </header>
     <div class="centerdiv">
+        <img id="mobileheaderimg" class="headerimg" src="../resources/images/projectimages/aboutme.gif">
         <div id="headerdiv">
-            <h1>tracy pham</h1>
-            <img id="headshot" src="../resources/images/headshot.jpg" height="300px" style="margin-left: 50%;">
+            <div>
+                <img id="headshot" src="../resources/images/headshot.jpg">
+            </div>
+            <div>
+                <h1 id="headername">tracy pham</h1>
+                <p id="headertext"> ☆ hci & front-end ☆</p>
+            </div>
         </div>
-        <p> computer scien</p>
+            <!-- <img src="https://blinkie-net.neocities.org/dividers/pink/08.gif" width="700px"> -->
+        <div id="abouttext">
+            <p> my name is <strong>tracy</strong>! i am a recent computer science graduate. during my undergrad, i specialized in human computer interaction (hci).
+                my focus was on front-end dev and user experience/user interface design (ux/ui).</p>
+            <p>
+                i love blending creativity and coding, whether that's through building interfaces, designs, or just making things look cool :]
+            </p>
+            <br>
+            <span>my interests include:</span>
+            <ul>
+                <li>
+                    <strong>gaming!</strong> i play league of legends, overwatch, valorant, maplestory, and various switch games to pass the time 
+                </li>
+                <li>
+                    <strong>fashion!</strong> i love learning about designers and what they have to offer to art
+                </li>
+                <li>
+                    <strong>music!</strong> going to concerts is one of my favorite pastimes~~
+                </li>
+            </ul>
+            <!-- <div id="photos">
+                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/A_Maple_Icon_Like_MapleStory%2CMay_2022.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"> 
+                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/A_Maple_Icon_Like_MapleStory%2CMay_2022.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original">
+                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/A_Maple_Icon_Like_MapleStory%2CMay_2022.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original">
+            </div> -->
+        </div> 
     </div>
 </body>
+<footer>
+    <div class="buttonbar">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a7.gif">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i2.gif">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/b46.gif"> 
+        <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/3ds.gif"> 
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/c15.png"> 
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/a57.png">
+        <img class="stamp" src="https://adriansblinkiecollection.neocities.org/stamps/i12.png">
+        <img class="stamp" height="57px" src="https://thekittyburger.neocities.org/stamps/mimikyu.gif"> 
+        <img class="stamp" height="57px" src="../resources/images/tomodachistamp.png">
+    </div>
+</footer>
 </html>

@@ -14,6 +14,47 @@
     /* font-weight: 400; */
     font-style: italic;
 }
+
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    border-bottom: 1px solid #000000;
+}
+
+.navbarlinks{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    gap: 3rem;
+}
+
+.buttonbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    bottom: 5vh;
+    width: 60%;
+    gap: 0.5rem;
+    margin-top: 5vh;
+}
+.headerimg{
+    margin-top: 2vh;
+}
+
+.backbutton{
+    left: 5vh;
+}
 /* home page css */
 #mainpage{
     display: flex;
@@ -37,6 +78,7 @@
     border-radius: 0%;
     border-color: rgba(0,0,0,0);
     font-size: 1em;
+    white-space: nowrap;
 }
 
 .mainbutton:hover, .projectlink:hover{
@@ -57,23 +99,53 @@
 /* about me css */
 #headshot{
     border-radius: 150px;
+    height: 250px; 
+    margin-right: 0%;
+}
+
+#headername{
+    margin-left: 1rem;
+}
+
+#headertext{
+    margin-left: 0.75rem;
 }
 
 #headerdiv{
-    display: flex;;
+    display: flex;
     flex-direction: row;
-    /* gap: 40vh; */
+    gap: 3rem;
+    align-items: center;
+    
+}
+
+#abouttext{
+    max-width: 700px;
+    text-align: center;
+}
+
+#photos{
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+h1 {
+    white-space: nowrap;
 }
 /* projects css */
 .centerdiv{
-    /* overflow-y: scroll; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 40vh; */
-    /* height: 20vh; */
-    gap: 0.25rem;
+    gap: 0.5rem;
 }
 
 .projectlink, .bigtext{
@@ -81,9 +153,13 @@
     border-radius: 0%;
     border-color: rgba(0,0,0,0);
 }
+
+#projectlinks{
+    margin-top: 35vh;
+    margin-bottom: 25vh;
+}
 #email{
     font-size: large;
-    /* border-radius: 0%; */
     border-color: rgba(0,0,0,0);
 }
 
@@ -96,7 +172,6 @@
 }
 .fateimg{
     width: 30%;
-    /* height: auto; */
     max-height: 400px;
     object-fit: contain;
 }
@@ -123,27 +198,73 @@
     opacity: 1;
 }
 
+#contactlinks, #computerprojectlinks{
+    margin-top: 5vh;
+}
+
 /* mobile css rules */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    #mobileheaderimg{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
     .headerimg{
+        margin-top: 0vh;
         width: 300px;
     }
+
+    /* rules for gopher f.a.t.e */
     #milestone1-7, .blogimg{
         height: 150px;
     }
     .fateimg, #commentimg{
         width: 80%;
     }
-    /* .mobileimg {
-        height: 150px !important;
-        /* width: 20% !important; */
     #imgshowcase{
         flex-direction: column;
         align-items: center;
     }
+
+    /* rules for stamps and nav bar */
+    .buttonbar{
+        width: 400px;
+        gap: 0;
+        flex-wrap: wrap;
+        bottom: 0.5vh
+    }
+    .stamp{
+        height: 40px;
+    }
+
+    .navbarlinks{
+        gap: 1.5rem;
+    }
+
+    /* rules for about me*/
+    #headerdiv{
+        gap: 1rem;
+    }
+    #headshot{
+        height: 175px;
+    }
+    #headername{
+        margin-left: 0.5rem;
+    }
+
+    /* subject to change */
+    /* #headertext{
+        margin-left: 1rem; 
+    } */
+
+    /* rules for project */
+    #projectlinks{
+        margin-top: 30vh;
+    }
 }
 
+
 @media (max-width: 400px) {
+    /* rules for maintaining link buttons */
     .mainbutton .projectlink{
         font-size: 1em; 
         padding: 0.5rem 1rem;
